@@ -39,13 +39,14 @@ class Bot extends Modul{
 		foreach($data as $base){
 			$url = $base["host"];
 			$cookie = $base["cookie"];
+			echo "Host: ".$this->col($url,"c")."\n";
 			
 			$sesi="https://".$url."/session/autofaucet";
 			$r1=$this->Run($sesi,$this->head($cookie,$user_agent),true);
-		
+			if(preg_match('/Cloudflare/',$r1)){
+				echo $this->col("cloudflare detect\n","m");
+			}
 			$err=trim(explode('</div>',explode('<div class="AutoACell AAC-error">',$r1)[1])[0]);
-			if($err=='Insufficient balance to claim rewards.'){echo $this->col($err,"m")."\n";self::line();}
-          
 			if(preg_match('/FaucetPay/',$r1)){
 				$pay=$this->col('fp',"b");
 			}elseif(preg_match('/ExpressCrypto/',$r1)){
@@ -60,7 +61,6 @@ class Bot extends Modul{
 			$coin1=trim(explode('</div>',explode('<i class="fas fa-coins"></i>',$r1)[1])[0]);
 			preg_match_all('#<div class="AutoACell AAC-success">(.*?)<a#is',$r1,$ss);
 			if($coin1){
-				echo "Host: ".$this->col($url,"c")."\n";
 				echo $this->col($coin1,"k")."\n";
 			}
 			if($ss[1]){
@@ -72,8 +72,9 @@ class Bot extends Modul{
             		echo $this->col(trim($t),"h").",";
 				}
 			echo "\n";
-        	self::line();
 			}
+		if($err=='Insufficient balance to claim rewards.'){echo $this->col($err,"m")."\n";}
+		self::line();
 		}$this->tmr(60);goto ulang;
 	}
 }
