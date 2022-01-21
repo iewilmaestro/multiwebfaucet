@@ -4,9 +4,9 @@
  - Website dragon [here](https://dragonfaucets.xyz/?r=nmRQ141d2)
  - Website best [here](https://bestautofaucet.com/?r=afmPGdwLmq)
  - Website phoneix [here](https://phoenixfaucets.xyz/?r=tEsBn0C0-6)
- - Website cryptos
- - Website paybits
- - Website alpha
+ - Website cryptos [here](https://bit.ly/3K8WQVV)
+ - Website paybits [here](https://bit.ly/3qnZMpN)
+ - Website alpha [here](https://bit.ly/3FMKuiI)
  - Website xtra [here](https://auto.xtrabits.click/?r=KZvCn7u1V)
  - Website jupi [here](https://jupiterfaucet.net/?r=H_ZyyHAqV)
 
