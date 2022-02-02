@@ -12,16 +12,12 @@ $user_agent = "xxx";
 /*
 @Cookie
 */
-$mcm = "xxx";
-$dragon = "xxx";
 $best = "xxx";
-$phoenix = "xxx";
+$xtra = "xxx";
 $cryptos = "xxx";
 $paybits = "xxx";
-$xtra = "xxx";
-$alpha = "xxx";
 $jupi = "xxx";
-
-
+$alpha = "xxx";
+$cryptoshi = "xxx";
 
 /******************************************************/
