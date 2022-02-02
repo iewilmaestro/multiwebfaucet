@@ -11,13 +11,11 @@
 require "./cfg.php";
 
 $data = [
-  ["host"=>"mcmfaucets.xyz","cookie"=>$mcm],
-  ["host"=>"dragonfaucets.xyz","cookie"=>$dragon],
   ["host"=>"bestautofaucet.com","cookie"=>$best],
-  ["host"=>"phoenixfaucets.xyz","cookie"=>$phoenix],
+  ["host"=>"auto.xtrabits.click","cookie"=>$xtra],
+  ["host"=>"jupiterfaucet.net","cookie"=>$jupi],
+  ["host"=>"alphafaucet.xyz","cookie"=>$alpha],
   ["host"=>"cryptosway.xyz","cookie"=>$cryptos],
   ["host"=>"paybits.xyz","cookie"=>$paybits],
-  ["host"=>"auto.xtrabits.click","cookie"=>$xtra],
-  ["host"=>"alphafaucet.xyz","cookie"=>$alpha],
-  ["host"=>"jupiterfaucet.net","cookie"=>$jupi]
+  ["host"=>"cryptoshi.club","cookie"=>$cryptoshi],
 ];
